@@ -33,11 +33,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Run `python -m streamlit run app.py`. The game opens in your browser with the difficulty set to Normal (range 1 to 100, 8 attempts).
+2. Pick a difficulty in the sidebar. The range and attempt limit change and a new game starts.
+3. Type a guess and click Submit Guess. If it is too high, the hint says "Too High"; if it is too low, it says "Too Low".
+4. Keep guessing until you find the secret number. A win shows balloons and your final score. Running out of attempts ends the game and reveals the secret.
+5. Click New Game at any time. It picks a new secret in the current range and clears the guess history, score and input box, so you can guess again straight away.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -48,7 +48,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
 ```
-
+![alt text](image.png)
 ## 🚀 Stretch Features
 
 - [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]
